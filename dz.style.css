@@ -839,6 +839,12 @@ footer {
     width: 44px;
 }
 
+#nav-logo {
+    height: 24px;
+    margin-right: 8px;
+    width: 24px;
+}
+
 #app-title {    
     font-weight: bold;    
     font-size: 32px;
