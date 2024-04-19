@@ -559,50 +559,6 @@ b {
     margin-right: auto;
 }
 
-.get-container-card {
-    height: 688px;
-    color: var(--white);
-    background-color: var(--lightcream);
-    border: 1px solid var(--grey);
-    border-radius: 32px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.get-container {
-    height: 688px;
-    padding: 16px;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;    
-}
-
-.get-card h4 {    
-    font-size: 32px;    
-    line-height: 48px;
-    font-weight: 600;
-    display: flex;
-    justify-content: space-between;
-}
-
-.get-button-paragraph {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 48px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-bottom: 52px;
-}
-
-.join-text-card {
-    width: 344px;
-    text-align: center;
-    margin-bottom: 72px;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-}
 
 .button-white-get-card {
     width: 156px;
@@ -671,12 +627,6 @@ b {
     color: var(--cream);
     align-self: flex-start;
     margin-left: 12px;
-}
-
-.small-get-image {    
-    height: 344px;
-    margin-left: 26px;
-    border-radius: 16px;
 }
 
 /* -- Footer -- */
@@ -829,15 +779,6 @@ footer {
 }
 
 @media (min-width: 1024px) {
-
-    .join-text-card {
-        text-align: left;        
-    }
-
-    .button-white-get-card {
-        margin-left: 0px;
-        margin-right: 0px;       
-    }
 
     .section-row-11-cols {
         display: grid;
@@ -1015,7 +956,7 @@ footer {
 
 /* cod nou in sus */
 /* ----------------------------------------- */
-/* cod vechi in jos */
+/* alte exemple de stiling */
 
 /* body {
 
@@ -1033,21 +974,6 @@ footer {
     padding: 0;
 }
 
-.buttons {
-    display: flex;
-    justify-content: flex-end;
-    color: white;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-}
-
-.row-centered {
-    align-items: center;
-}
-
 header {
     background-color: rgba(255, 255, 255, 0.8);
     opacity: 0.95;
@@ -1060,33 +986,10 @@ header {
     height: 200px;
 }
 
-.header-span {
-    width: 60px;
-    border-bottom: 3px solid black;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
 .font-baskerville {
     font-family: 'Baskerville', sans-serif;
     margin-top: 40px;
     margin-bottom: 15px;
-}
-
-h1 {
-    color: black;
-    font-family: 'Baskerville', sans-serif;
-}
-
-h5 {
-    color: solid black;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-h3 {
-    color: black;
-    margin: 0 10px;
 }
 
 .box-shadow {
@@ -1100,165 +1003,6 @@ h3 {
     box-shadow: -11px 11px 21px -1px rgba(0,0,0,.75);
     /* background opacity: 0.70; */
     /* border-radius: 5px;
-    margin-top: 60px;
-    
+    margin-top: 60px;    
 }
 
-.base-footer {
-    background-color: black;
-    color: #fff;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    font-size: x-small;
-}
-
-.experience-container {
-    width: 70%;
-    margin: 0 auto;
-}
-
-.title {
-    text-align: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-
-@media (max-width: 576px ) {
-    body {
-        font-size: 14px;
-        block-size: 10px;
-    }
-}
-
-@media (max-width: 768px ) {
-    body {
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 992px ) {
-    body {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 1200px ) {
-    body {
-        font-size: 22px;
-    }
-}
-
-.nav-links-container {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 28px;
-    margin: 0 10px;
-    text-decoration: none;
-    background-color: #fff;
-    color: #173a56; /*acest "color" de mai jos, nu este randat*/
-    /* cursor: pointer;
-    margin-right: 5px;
-    border: 1px;
-    border-radius: 5px;
-    padding: 0 15px;
-    box-shadow: -11px 11px 10px -1px #02897A;
-}
-
-.nav-links-container a + a {
-    margin-left: 25px;
-}
-
-.primary-button {
-    background-color: #02897A; /*culoare randata*/
-    /* border-radius: 5px;
-    border: 1px;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 28px;
-    color: white; acest item: "color", nu este randat */
-    /* cursor: pointer;
-    padding: 0 15px;
-    margin-right: 5px;
-    box-shadow: 31px -11px 16px 10px lightgreen;                          
-}
-
-.nav-links-container-row {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 28px;
-    margin: 0 5px;
-    text-decoration: none;
-    color: yellowgreen;  acest item :"color", nu este randat */
-    /* cursor: pointer;
-    margin-right: 10px;
-    display: flex;
-    flex-direction: row;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins',
-     sans-serif;
-}
-
-html, body {
-    display: inline-block;
-    height: 60px;
-    
-    float: left;
-    margin: 0 5px;
-    overflow: hidden;
-    
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1 );
-    transition: all 0.3s ease-out;
-}
-
-.wrapper.buttons:hover {
-    width: 200px;
-}
-
-.wrapper.buttons.icons {
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    text-align: center;
-    border-radius: 50px;
-    box-sizing: border-box;
-    line-height: 60px;
-    transition: all 0.3s ease-out;
-}
-
-.wrapper.buttons:nth-child(1):hover.icon {
-    background: #4267b2;
-}
-
-.wrapper.buttons:nth-child(2):hover.icon {
-    background: #1da1f2;
-}
-
-.wrapper.buttons.icons i {
-    font-size: 25px;
-    line-height: 60px;
-    transition: all 0.3s ease-out;
-}
-
-.wrapper.buttons:nth-child(1) span {
-    color: #4267B2;
-}
-
-.wrapper.buttons:nth-child(2) span {
-    color: #1da1f2;
-} */ 
