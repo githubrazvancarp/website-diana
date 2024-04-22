@@ -15,11 +15,6 @@
     --darkblue: #102c57;
 }
 
-/* de retinut: 
-- putem folosi proprietatile de CSS justify-content, align-items, flex-direction DOAR pe elemente care au display: flex;
-- mereu cand avem un singur element pe linie si vrem sa il centram / sa il aliniem pe centru folosim margin-left: auto si margin-right: auto ( ne si asiguram ca are spatiu pentru margini ) + daca este element tip inline / inline-block adaugi display: block
-*/
-
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--darkblue);
@@ -47,12 +42,13 @@ b {
 }
 
 /* -- Common -- */
+
 .section-container {
     padding: 24px;
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 12px;
+    margin-bottom: 12px;    
 }
 
 .section-title {
@@ -122,6 +118,7 @@ b {
 }
 
 /* -- Header -- */
+
 .header-image {
     width: 100%;
     max-width: 600px;
@@ -366,7 +363,8 @@ b {
 .content-container-nonreverse {    
     max-width: 1108px;
     display: flex;
-    flex-direction: column;       
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);       
 }
 
 .content-container-card {
@@ -484,7 +482,7 @@ b {
     display: flex;
     align-items: center;
     height: 100px;
-    margin: 0px auto; /* ECHIVALENT CU margin-left: auto; margin-right: auto; */
+    margin: 0px auto;
 }
 
 .small-row-price .price-tall-number {
@@ -535,8 +533,6 @@ b {
 }
 
 .small-paragraph-3 {
-    /* margin: 0px 92px 38px 92px; */
-    /* Stergem marginile puse manual pe left si right */
     margin-bottom: 36px;
     margin-left: auto;
     margin-right: auto;
@@ -643,31 +639,6 @@ b {
     margin-top: 24px;
     margin-bottom: 28px;
     gap: 16px;
-}
-
-.footer-row-cols {
-    width: 1112px;
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-areas: 
-    'grid-col-1 grid-col-2 grid-col-3 grid-col-4'    ;
-    gap: 72px;
-}
-
-.footer-row-cols h5 {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.footer-row-cols p {
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.footer-row-cols > div {
-    margin-top: 0px;
-    margin-bottom: 40px;
-    margin-right: 68px;
 }
 
 .ft-logo-size {
@@ -779,17 +750,6 @@ footer {
 }
 
 @media (min-width: 1024px) {
-
-    .section-row-11-cols {
-        display: grid;
-        grid-template-areas: 
-        'grid-col-1'
-        'grid-col-2' 
-        'grid-col-3' 
-        'grid-col-4';
-        gap: 1px;
-    }
-
     .footer-row-cols {
         display: grid;        
         gap: 1px;
@@ -825,11 +785,19 @@ footer {
 }
 
 .nav-row {
-    display: flex;    
+    display: flex;
+    max-width: 1600px;  
+    
+    /* position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; */
 }
 
 .nav-row-centered {    
+    display: flex;
     align-items: center;
+    margin-bottom: 12px;
 }
 
 #app-logo {
@@ -837,6 +805,7 @@ footer {
     margin-right: 16px;
     background-color: var(--cream);
     width: 44px;
+    margin-left: 32px;
 }
 
 #nav-logo {
@@ -853,7 +822,7 @@ footer {
 
 .nav-bar-wrapper {
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
 
 .nav-bar-buttons-container {
@@ -862,6 +831,8 @@ footer {
 
 .nav-links-container {
     margin-right: 12px;
+    display: flex;
+    align-items: center;
 }
 
 .nav-links-container > a {
@@ -873,8 +844,10 @@ footer {
 }
 
 .nav-content-container {
-    max-width: 1100px;    
+    max-width: 100%;
     margin: auto;
+    margin-bottom: 12px;   
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #menu-collapse {
