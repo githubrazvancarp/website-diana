@@ -57,7 +57,7 @@ b {
 
 .section-title {
     line-height: 48px;
-    font-family: 'Dancing Script', sans-serif;
+    font-family: 'Great Vibes', sans-serif;
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 24px;
@@ -826,7 +826,7 @@ footer {
 }
 
 #app-title { 
-    font-family: 'Dancing script', sans-serif;
+    font-family: 'Great Vibes', sans-serif;
     font-size: 32px;
     font-weight: 400;
     color: var(--darkblue);
@@ -945,9 +945,17 @@ footer {
     font-size: x-small;
 }
 
+.collegium {
+    width: 224px;
+    height: 108px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
 /* cod nou in sus */
 /* ----------------------------------------- */
-/* alte exemple de stiling */
+/* alte notite random si exemple de stiling in jos*/
 
 /* body {
 
